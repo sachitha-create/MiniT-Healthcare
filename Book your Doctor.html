@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Doctor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-header {
+            text-align: center;
+            color: #0539f7;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            background-color: #0539f7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #032ea5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1 class="form-header">Book Your Doctor</h1>
+    <form target="_blank" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="160f5c47-1272-45c8-b33e-8453c3d95d49">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="email">Gmail Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Gmail address" required>
+
+        <h2>Check Time</h2>
+        <h3>
+            <p> Check the doctor,s timings here </p>
+            <a href="MiniT Healthcare.html" style="color: blue;"> Check</a>
+        </h3>
+
+        <label for="clinic">Location</label>
+        <select id="clinic" name="clinic" required>
+            <option value="">Select a location</option>
+            <option value="Mathara">Mathara</option>
+            <option value="Deniyaya">Deniyaya</option>
+            <option value="Rotuba">Rotuba</option>
+            <option value="Galle">Galle</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+        <label for="payment">payment No (An amount of Rs.20 is charged for booking.It's on the website.)</label>
+        <input type="tel" id="clipnumber" name="Payment" placeholder="Enter your Payment clip Number" required>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</div>
+
+</body>
+</html>

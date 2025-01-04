@@ -1,0 +1,146 @@
+<div class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button class="faq-question">What is this website about?</button>
+    <div class="faq-answer">
+      <p>This website is a platform to connect patients with qualified medical professionals, providing easy access to information and appointment scheduling.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">How do I book an appointment with a doctor?</button>
+    <div class="faq-answer">
+      <p>You can book an appointment by visiting the doctor’s profile and selecting a suitable date and time from their available schedule.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">Is my personal information secure?</button>
+    <div class="faq-answer">
+      <p>Yes, we prioritize your privacy and ensure that all your personal and medical information is securely encrypted and stored.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">How do I book an appointment with a doctor?</button>
+    <div class="faq-answer">
+      <p>You can book an appointment by visiting the doctor’s profile and selecting a suitable date and time from their available schedule.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> Can I cancel or reschedule my appointment?</button>
+    <div class="faq-answer">
+      <p>Yes, appointments can be canceled or rescheduled through your account dashboard. Please check the doctor’s cancellation policy for any specific terms.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> Will I receive a confirmation for my appointment?</button>
+    <div class="faq-answer">
+      <p>Yes, you will receive a confirmation email or SMS once your appointment is successfully booked.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> Are online consultations available?</button>
+    <div class="faq-answer">
+      <p>Yes, some doctors offer online consultations via video or chat. Check their profile for availability.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> Are emergency services available through this platform?</button>
+    <div class="faq-answer">
+      <p>No, this platform is not intended for emergencies. For urgent medical care, please contact your nearest hospital or emergency service provider.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> Is there a fee for booking an appointment?</button>
+    <div class="faq-answer">
+      <p>The consultation fees are determined by the doctors and will be displayed on their profiles. Any platform-specific charges will be disclosed during the booking process.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> What payment methods are accepted?</button>
+    <div class="faq-answer">
+      <p>We accept major online banking, and mobile payment options. Details will be provided at checkout.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> Will my information be shared with anyone?</button>
+    <div class="faq-answer">
+      <p>Your information will only be shared with the doctors you consult, and only as necessary for providing medical care. We adhere to strict confidentiality policies.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">  What should I do if I face issues using the website?</button>
+    <div class="faq-answer">
+      <p>If you encounter any technical issues, please contact our support team through the "Contact Us" page or email us at [support@example.com].</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">  Is the website accessible on mobile devices?</button>
+    <div class="faq-answer">
+      <p>Yes, our website is mobile-friendly and can be accessed on smartphones and tablets.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">  Can I recommend a doctor to be listed on this platform?</button>
+    <div class="faq-answer">
+      <p>Yes, please contact us with the doctor’s details through the "Contact Us" page, and we will review your recommendation.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question"> How do I give feedback about my experience?</button>
+    <div class="faq-answer">
+      <p>You can provide feedback through your account dashboard or the feedback form available after your consultation.</p>
+    </div>
+  </div>
+
+
+</div>
+
+<style>
+  .faq-section {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #0022ff;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  .faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .faq-item {
+    margin-bottom: 15px;
+  }
+  .faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #36b4f7;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .faq-answer {
+    display: none;
+    padding: 10px 15px;
+    border-left: 3px solid #007BFF;
+    background-color:#6b6b6b;
+  }
+  .faq-question:focus + .faq-answer,
+  .faq-question:hover + .faq-answer {
+    display: block;
+  }
+</style>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach((question) => {
+    question.addEventListener('click', () => {
+      const answer = question.nextElementSibling;
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    });
+  });
+</script>

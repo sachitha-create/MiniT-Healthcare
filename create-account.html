@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background-color: #2a2a2a;
+            color: #ffffff;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #32CD32; /* Lime green color */
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #32CD32; /* Lime green color */
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #228B22; /* Dark green color */
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 15px;
+        }
+        .forgot-password a {
+            color: #32CD32; /* Lime green color */
+            text-decoration: none;
+        }
+        .success-message {
+            text-align: center;
+            background-color: #4CAF50; /* Green */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: none;
+        }
+        .success-message a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="create-account-form">
+        <h1>Create Account</h1>
+      <form target="_blank" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="160f5c47-1272-45c8-b33e-8453c3d95d49">
+            <input type="text" name="username" class="input-field" placeholder="Username" required>
+            <input type="text" name="phonenumber" class="input-field" placeholder="Phone Number" required>
+            <input type="email" name="email" class="input-field" placeholder="Email" required>
+
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+        <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+        </div>
+    </div>
+
+    <div class="success-message" id="success-message">
+        <h2>Account Created Successfully!</h2>
+        <p>Welcome! You can now <a href="#" id="go-back-link">go back to the website</a>.</p>
+    </div>
+
+    <script>
+        function createAccount(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+
+            // Simulate account creation (e.g., validation or API request)
+            document.getElementById('create-account-form').style.display = 'none'; // Hide the form
+            document.getElementById('success-message').style.display = 'block'; // Show success message
+
+            // Set the redirection link for the success message
+            var websiteURL = "file:///C:/Users/User/OneDrive/Attachments/Documents/Desktop/testing/1st%20page/index.html"; // Replace with your website URL
+            document.getElementById('go-back-link').href = websiteURL;
+
+            // Redirect the user after a short delay
+            setTimeout(function() {
+                window.location.href = websiteURL; // Redirect to the website
+            }, 3000); // 3-second delay before redirect
+        }
+    </script>
+
+</body>
+</html>
